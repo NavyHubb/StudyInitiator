@@ -34,10 +34,16 @@
     <td align="center"><img src="https://avatars.githubusercontent.com/u/48309725?v=4" width="130px;" alt=""></td>
   </tr>
   <tr>
-    <td align="center"><a href="https://github.com/miraekwak"><b>곽미래</b></a></td>
-    <td align="center"><a href="https://github.com/NavyHubb"><b>김성재</b></a></td>
-    <td align="center"><a href="https://github.com/truningkick"><b>김재형</b></a></td>
-    <td align="center"><a href="https://github.com/b9s2w6"><b>백성욱</b></a></td>
+    <td align="center"><a href="https://github.com/miraekwak"><b>miraekwak</b></a></td>
+    <td align="center"><a href="https://github.com/NavyHubb"><b>NavyHubb</b></a></td>
+    <td align="center"><a href="https://github.com/truningkick"><b>truningkick</b></a></td>
+    <td align="center"><a href="https://github.com/b9s2w6"><b>b9s2w6</b></a></td>
+  </tr>
+  <tr>
+    <td align="center"><b>곽미래</b></td>
+    <td align="center"><b>김성재</b></td>
+    <td align="center"><b>김재형</b></td>
+    <td align="center"><b>백성욱</b></td>
   </tr>
 </table>
 
