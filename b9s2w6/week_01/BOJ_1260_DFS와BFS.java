@@ -51,8 +51,6 @@ public class BOJ_1260_DFS와BFS {
 		
 		int row = 0;
 		int column = 0; 
-		int[] spot = new int[m*2]; // 넉넉하게 간선*2개 배열 생성
-		int idx = 0;// spot의 사이즈 체크
 		
 		for(int i = 0; i<m; i++) {
 			column =sc.nextInt();
