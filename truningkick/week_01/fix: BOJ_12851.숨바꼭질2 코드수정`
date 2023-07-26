@@ -1,0 +1,80 @@
+package test_230726;
+
+import java.util.*;
+import java.io.*;
+
+public class 숨바꼭질 
+{
+	public static void main(String[] args) throws IOException
+	{
+		//입력
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		int N = Integer.parseInt(st.nextToken());
+		int K = Integer.parseInt(st.nextToken());
+
+		// N,K 일치 시 소요시간 0
+		if (N == K)
+		{
+			System.out.println("이동할 필요가 없어용");
+			System.out.println("최단시간 : " + 0 + " 찾는 방법 : " + 0);
+			return;
+		}
+
+		int[] visited = new int[100_000];
+		int[] time_arr = new int[100_000];
+		visited[N] = 1;
+		time_arr[N] = 1;
+		Queue<Integer> q = new LinkedList<>();
+		q.add(N);
+		int size = q.size();
+		int count = 0;			//소요시간
+		int target = 100_001;	//최단시간
+		int re_cnt =0;			//최단시간으로 목표에 도착하는 방법의 수
+
+		Loop1 : while (true) {
+			count++;
+			size = q.size();
+			
+			for (int i=0; i<size; i++) {
+				int x = q.remove(); //Queue 최전방의 수 제거, x 대입
+				visited[x] += 1;	
+
+				//탐색 중  최단시간 초과 시 종료
+				if (count > target) {
+					System.out.println("최단시간 : " + target + " 찾는 방법 : " + re_cnt);
+					break Loop1;
+				}
+				
+				//1_동생 위치 도달 시
+				 //1.1_최단시간 식별 전 까지(최초 1회)
+				if ( ((x-1==K) || (x+1==K) || (x*2==K)) && target == 100_001 ) { 
+					target = count;
+					re_cnt +=1;
+				}
+				 //1.2_최단시간 식별 후 부터
+				else if ( ((x-1==K) || (x+1==K) || (x*2==K)) && (count == target) ) {
+					re_cnt +=1;
+				}
+
+				
+				//BFS
+				if ( ( x-1 < 100_000)  &&  (x-1>=0) && (time_arr[x-1] >= visited[x-1]) ) {
+					time_arr[x-1] = count;
+					visited[x-1] += 1; 
+					q.add(x-1);
+				}
+				if ( (x+1 < 100_000) && (x+1>=0) && (time_arr[x+1] >= visited[x+1]) ) {	
+					time_arr[x+1] = count;
+					visited[x+1] += 1; 
+					q.add(x+1);
+				}
+				if ( (x*2<100_000) && (x*2>=0) && (time_arr[x*2] >= visited[x*2]) ) {
+					time_arr[x*2] = count;
+					visited[x*2] +=1;
+					q.add(x*2);
+				}
+			}
+		}
+	}
+}
