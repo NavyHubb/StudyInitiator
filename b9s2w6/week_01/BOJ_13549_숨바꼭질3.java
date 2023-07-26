@@ -21,7 +21,7 @@ public class BOJ_13549_숨바꼭질3 {
 			int[] spot = {c-1, c+1, 2*c};
 			
 			for(int i = 0; i<3; i++) {
-				if(spot[i]<200000 &&spot[i]>=0 && visited[spot[i]] == 0) {
+				if(spot[i]<100000 &&spot[i]>=0 && visited[spot[i]] == 0) {
 					queue.add(spot[i]);
 					if(i == 2) visited[spot[i]] = visited[c];
 					else visited[spot[i]] = visited[c]+1;
