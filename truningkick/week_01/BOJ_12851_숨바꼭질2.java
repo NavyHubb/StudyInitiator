@@ -3,9 +3,9 @@ package truningkick.week_01;
 import java.util.*;
 import java.io.*;
 
-public class 숨바꼭질 
+public class BOJ_12851_숨바꼭질2 
 {
-	public static void main(String[] args) throws IOException, OutOfBoundsException
+	public static void main(String[] args) throws IOException
 	{
 		//입력
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
