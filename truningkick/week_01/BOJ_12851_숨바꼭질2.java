@@ -1,3 +1,5 @@
+package truningkick.week_01;
+
 import java.util.*;
 import java.io.*;
 
