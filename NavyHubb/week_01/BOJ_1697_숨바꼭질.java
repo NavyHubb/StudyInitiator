@@ -16,7 +16,8 @@ public class BOJ_1697_숨바꼭질 {
         Scanner sc = new Scanner(System.in);
         N = sc.nextInt();
         K = sc.nextInt();
-
+        sc.close();
+        
         System.out.println(bfs());
     }
 
