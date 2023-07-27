@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class 숨바꼭질 {
+public class BOJ_1697_숨바꼭질 {
 	static int bfs(int start, int end) {
 		//queue, visited 배열 생성
 		int[] visited = new int[200000];
