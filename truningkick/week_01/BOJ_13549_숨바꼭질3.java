@@ -1,4 +1,4 @@
-package StudyDay2;
+package truningkick.week_01;
 
 import java.util.*;
 
