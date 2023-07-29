@@ -1,6 +1,8 @@
 package b9s2w6.week_01;
 
 import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
 
 public class BOJ_12851_숨바꼭질2 {
   static int min = Integer.MAX_VALUE;

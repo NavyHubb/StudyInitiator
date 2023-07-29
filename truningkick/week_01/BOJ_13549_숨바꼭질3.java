@@ -2,7 +2,7 @@ package truningkick.week_01;
 
 import java.util.*;
 
-public class Main {    
+public class BOJ_13549_숨바꼭질3 {
  
     static int min = Integer.MAX_VALUE;
     static int n, k;
