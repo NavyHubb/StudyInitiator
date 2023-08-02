@@ -1,17 +1,20 @@
 package week_02;
 
-
 import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.math.*;
+
 public class BOJ_9095_123더하기 {
 	
 	static int dp[] = new int [11];
 	
-	public static void main(String[] args)   {
-		Scanner sc = new Scanner(System.in);
-		
-		
-		int t = sc.nextInt();
+	public static void main(String[] args) throws NumberFormatException, IOException   {
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		int t = Integer.parseInt(br.readLine());
+
 		dp[1] =1; //초기 값 초기화
 		dp[2]=2;
 		dp[3]=4;
@@ -21,18 +24,8 @@ public class BOJ_9095_123더하기 {
 		}
 		
 		for(int i=0;i<t;i++) {
-			int n = sc.nextInt();
-			
+			int n = Integer.parseInt(br.readLine());	
 			System.out.println(dp[n]);
 		}
-		
-		
-		
-		
-		
-	}
-	
+	}	
 }
- 
-
- 
