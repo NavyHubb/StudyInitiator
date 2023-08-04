@@ -4,11 +4,11 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class boj_14503 {
+public class BOJ_14503_ë¡œë´‡ì²­ì†Œê¸° {
 
 	private static int N, M, CNT=0;
 	private static int[][] room;
-	private static int[] dr = {-1, 0, 1, 0}; // ¹Ý½Ã°è¹æÇâ(ºÏ, ¼­, ³², µ¿)
+	private static int[] dr = {-1, 0, 1, 0}; // ï¿½Ý½Ã°ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½, ï¿½ï¿½, ï¿½ï¿½, ï¿½ï¿½)
 	private static int[] dc = {0, -1, 0, 1};
 	
 	public static void main(String[] args) throws IOException {
@@ -44,7 +44,7 @@ public class boj_14503 {
 		}
 		
 		boolean isPossibleCleaning = false;
-		// µ¿¼­³²ºÏ Ä­ Å½»ö
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ä­ Å½ï¿½ï¿½
 		for(int d=0; d<4; d++) {
 			if(room[r+dr[d]][c+dc[d]] == 0) {
 				isPossibleCleaning = true;
@@ -52,9 +52,9 @@ public class boj_14503 {
 			}
 		}
 		
-		// Ã»¼ÒµÇÁö ¾ÊÀº Ä­ÀÌ ÀÖ´Â °æ¿ì
+		// Ã»ï¿½Òµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ä­ï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½ï¿½ï¿½
 		if(isPossibleCleaning) {
-			int newDirec = (direc+1) %4; // ¹Ý½Ã°è¹æÇâ 90µµ È¸Àü
+			int newDirec = (direc+1) %4; // ï¿½Ý½Ã°ï¿½ï¿½ï¿½ï¿½ 90ï¿½ï¿½ È¸ï¿½ï¿½
 			if(room[r+dr[newDirec]][c+dc[newDirec]] == 0) {
 				cleaning(r+dr[newDirec], c+dc[newDirec], newDirec);				
 			}
@@ -62,9 +62,9 @@ public class boj_14503 {
 				cleaning(r, c, newDirec);
 			}
 		}
-		// Ã»¼ÒµÇÁö ¾ÊÀº Ä­ÀÌ ¾ø´Â °æ¿ì
+		// Ã»ï¿½Òµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ä­ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		else { 
-			// ÇÑÄ­ ÈÄÁøÇÒ ¼ö ÀÖ´Ù¸é
+			// ï¿½ï¿½Ä­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´Ù¸ï¿½
 			if(room[r+dr[(direc+2)%4]][c+dc[(direc+2)%4]] != 1) {
 				cleaning(r+dr[(direc+2)%4], c+dc[(direc+2)%4], direc);
 			}

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class BOJ_1759_¾ÏÈ£¸¸µé±â {
+public class BOJ_1759_ì•”í˜¸ë§Œë“¤ê¸° {
 	private static int L, C;
 	private static String[] alpha;
 	private static String[] selected;
