@@ -1,3 +1,4 @@
+package truningkick.week_02;
 
 import java.io.BufferedReader;
 import java.io.IOException;
