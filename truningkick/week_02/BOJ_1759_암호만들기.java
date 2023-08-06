@@ -1,4 +1,4 @@
-package week_02;
+package truningkick.week_02;
 
 /*
  * 서로 다른 L개의 알파벳 소문자로 구성
