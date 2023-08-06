@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+package week_02;
+=======
 package truningkick.week_02;
+>>>>>>> ac40507fa64704369b76de55f66b531223d26fa9
 
 import java.io.BufferedReader;
 import java.io.IOException;
