@@ -1,8 +1,8 @@
-package test;
+package b9s2w6.week_02;
 
 import java.util.Scanner;
 
-public class test1 {
+public class BOJ_10974_외판원순회2 {
 	
 	static int size;
 	static int[][] price;
