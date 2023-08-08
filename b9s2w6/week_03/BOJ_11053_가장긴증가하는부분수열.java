@@ -5,22 +5,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BOJ_11053_°¡Àå±äÁõ°¡ÇÏ´ÂºÎºĞ¼ö¿­ {
+public class BOJ_11053_ê°€ì¥ê¸´ì¦ê°€í•˜ëŠ”ë¶€ë¶„ìˆ˜ì—´{
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
-		//»çÀÌÁî
 		int n = Integer.parseInt(br.readLine());
 		
-		//¼ıÀÚ¹è¿­ º¯¼ö
 		int arr[] = new int[n];
 		
-		//dp ¹è¿­ º¯¼ö
 		int d[] = new int[n];
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		
-		//¼öÀÚ ¹è¿­ »ı¼º
 		for (int i = 0; i < n; i++) {
 			arr[i] = Integer.parseInt(st.nextToken());
 		}
@@ -28,7 +24,6 @@ public class BOJ_11053_°¡Àå±äÁõ°¡ÇÏ´ÂºÎºĞ¼ö¿­ {
 		d[0] = 1;
 		
 		for (int i = 1; i < n; i++) {
-			//°ªÀÌ  ÀÛÀ¸¸é 1
 			d[i] = 1;
 			for (int j = 0; j < i; j++) {
 				if (arr[j] < arr[i] && d[i] <= d[j]) {
