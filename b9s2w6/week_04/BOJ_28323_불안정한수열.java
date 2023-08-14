@@ -26,7 +26,7 @@ import java.util.StringTokenizer;
  * @author 백성욱
  *
  */
-public class Main_BJ_28323_불안정한수열_백성욱 {
+public class BOJ_28323_불안정한수열 {
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		//N 입력 받기
